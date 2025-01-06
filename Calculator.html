@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css" />
+    <script src="Calculator.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="calculation" class="calculation"></div>
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <div class="numbers">
+          <div class="row">
+            <button class="number" onclick="displayNumber('7')">7</button>
+            <button class="number" onclick="displayNumber('8')">8</button>
+            <button class="number" onclick="displayNumber('9')">9</button>
+          </div>
+          <div class="row">
+            <button class="number" onclick="displayNumber('4')">4</button>
+            <button class="number" onclick="displayNumber('5')">5</button>
+            <button class="number" onclick="displayNumber('6')">6</button>
+          </div>
+          <div class="row">
+            <button class="number" onclick="displayNumber('1')">1</button>
+            <button class="number" onclick="displayNumber('2')">2</button>
+            <button class="number" onclick="displayNumber('3')">3</button>
+          </div>
+          <div class="row">
+            <button class="number" onclick="displayNumber('0')">0</button>
+            <button class="operator" onclick="displayNumber(',')">,</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+          </div>
+        </div>
+        <div class="operators">
+          <button class="operator" onclick="performOperation('/')">/</button>
+          <button class="operator" onclick="performOperation('*')">x</button>
+          <button class="operator" onclick="performOperation('-')">-</button>
+          <button class="operator" onclick="performOperation('+')">+</button>
+          <button class="operator" onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
